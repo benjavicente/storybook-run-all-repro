@@ -7,7 +7,8 @@ No upstream issue, comment, or pull request has been created.
 Validation update: clean install, frozen lockfile, seven protocol tests, static build,
 and two CLI story tests pass. Chrome two-tab check is confirmed in
 `evidence/browser.json`, including both initiators and one-tab controls.
-Candidate browser validation and Stop/recovery remain pending.
+Candidate guard browser validation passes with patched 10.6.5 bundles; a full
+upstream next build and Stop/recovery were not tested.
 
 ## Destination and template
 
@@ -15,7 +16,7 @@ Candidate browser validation and Stop/recovery remain pending.
 - Issue form: <https://github.com/storybookjs/storybook/issues/new?template=bug_report.yml>
 - Authoritative template:
   <https://github.com/storybookjs/storybook/blob/next/.github/ISSUE_TEMPLATE/bug_report.yml>
-- Suggested title: `[Bug]: Run All invokes Vitest callbacks in both open manager tabs`
+- Suggested title: `[Bug]: Run tests runs the Vitest tests twice when two Storybook tabs are open`
 - Draft body: `ISSUE_BODY.md`. Keep its leading `🤖 ` when posting or adapting it.
 
 The form requires **Describe the bug**, a public **Reproduction link**, and
@@ -26,8 +27,9 @@ Before posting:
 
 1. Review `ISSUE_BODY.md` and `evidence/browser.json`; the reproduction URL is set.
 2. Recheck upstream duplicates and source status if time has passed.
-3. Obtain authorization to file the upstream issue. Repository publication does
-   not authorize filing it. Start external issue bodies/comments/replies with `🤖 `.
+3. Have the human contributor review and open the issue using the official form,
+   as required by Storybook’s AI contribution policy. Start external issue
+   bodies/comments/replies with `🤖 `. Disclose Codex assistance in the PR.
 4. For the PR, add native upstream regression tests and validate the candidate
    against the same Chrome two-tab/one-tab controls before claiming it fixes the UI.
 5. Keep Stop/recovery claims out unless separately reproduced and measured.

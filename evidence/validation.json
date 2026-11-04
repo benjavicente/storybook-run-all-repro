@@ -30,11 +30,19 @@
     "managedVitestRun": "passed",
     "stopRecovery": "not tested"
   },
-  "candidateBrowserCheck": "not performed",
+  "candidateBrowserCheck": "passed with equivalent guard in installed 10.6.5 manager bundles, restored afterward; not a full next build",
   "upstream": {
     "latestStable": "v10.6.5",
     "nextCommit": "c77d65454d19950f6cb365d63fcd9f3a6527eba0",
     "sourceSha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380",
     "fixedReleaseClaimed": false
+  },
+  "upstreamRegressionTests": {
+    "sourceBase": "45fd947d7f4d8770397769ae41a8704974f67fec",
+    "baseline": "1 regression case fails; 20 runtime tests pass",
+    "candidate": "21 runtime tests and 7 type tests pass",
+    "coreTypeCheck": "passed, external package diagnostics ignored by upstream script",
+    "format": "passed",
+    "lint": "passed with pre-existing warnings"
   }
 }

@@ -16,9 +16,13 @@ Validated on 2026-11-04 with a clean install and committed pnpm lockfile:
 - Watch mode was off. The runner was warmed with a successful one-tab global run.
 
 See `evidence/browser.json`, `evidence/validation.json`, and sanitized logs.
-The candidate has only been checked with modeled transport in the focused tests;
-it has not been applied to the installed packages or verified in the browser.
-Stop/cancellation and duplicate completed executions are not established here.
+The candidate guard was also verified through Chrome MCP using temporarily
+patched 10.6.5 manager bundles: either initiating tab produces one manager origin
+and one completed run; a one-tab control also passes. Installed bundles were
+restored afterward. This was not a full build of upstream `next`. See
+`evidence/candidate-browser.json` and `evidence/candidate-browser-server.log`.
+The terminal log also shows two completed test runs per two-tab click.
+Stop/cancellation is not established here.
 
 ## Focused test, without installing anything
 
@@ -49,7 +53,19 @@ The app opens at `http://localhost:6006`; automatic tab opening is disabled.
 `pnpm build-storybook` checks the static build. `pnpm test:stories` is an optional
 CLI control for the two stories, not a reproduction of a multi-manager UI action.
 
-## Exact two-tab check
+## Verify without browser DevTools
+
+Warm the runner with one successful global **Run tests** click in one tab, with
+Watch off. Open a second tab to the same URL, wait until ready, and click global
+**Run tests** once. The Storybook terminal prints two complete Vitest summaries
+(each reporting one passing test file and two passing tests). Close the second
+tab and click once again: only one new summary appears. Avoid editing files.
+
+See `evidence/browser-server.log`: the two runs at 09:35:39 came from one click
+in A; runs at 09:36:11 and 09:36:12 came from one click in B. The one-tab controls
+are single summaries at 09:35:11 and 09:37:35.
+
+## Exact two-tab check with optional origin diagnostics
 
 1. Open `http://localhost:6006/?path=/story/reproduction-counter--first` in tab A.
 2. Keep Watch off. Run the global tests with only A open and wait for both stories

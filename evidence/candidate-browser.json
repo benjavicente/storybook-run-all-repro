@@ -1,0 +1,59 @@
+{
+  "date": "2026-11-04",
+  "candidateSourceCommit": "c4bab7f",
+  "method": "Equivalent onRunAll guard temporarily applied to the installed Storybook 10.6.5 manager-api and manager globals bundles, then restored. This is not an end-to-end build of the upstream next checkout.",
+  "url": "http://localhost:6007/?path=/story/reproduction-counter--first",
+  "watchMode": false,
+  "observations": [
+    {
+      "case": "two tabs, click A",
+      "summaries": {
+        "A": {
+          "receivedMessages": 2,
+          "managerOrigins": [
+            "mw24qwcs6zhgbqi48xj"
+          ]
+        },
+        "B": {
+          "receivedMessages": 1,
+          "managerOrigins": [
+            "mw24qwcs6zhgbqi48xj"
+          ]
+        }
+      },
+      "completedTestRuns": 1,
+      "terminalTime": "10:06:48"
+    },
+    {
+      "case": "two tabs, click B",
+      "summaries": {
+        "A": {
+          "receivedMessages": 1,
+          "managerOrigins": [
+            "mw24robro3823r6yl5b"
+          ]
+        },
+        "B": {
+          "receivedMessages": 2,
+          "managerOrigins": [
+            "mw24robro3823r6yl5b"
+          ]
+        }
+      },
+      "completedTestRuns": 1,
+      "terminalTime": "10:07:26"
+    },
+    {
+      "case": "one tab after closing B",
+      "summary": {
+        "receivedMessages": 2,
+        "managerOrigins": [
+          "mw24qwcs6zhgbqi48xj"
+        ]
+      },
+      "completedTestRuns": 1
+    }
+  ],
+  "testResultPerRun": "1 test file passed; 2 tests passed",
+  "stopRecovery": "not tested"
+}

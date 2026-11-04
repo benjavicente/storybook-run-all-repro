@@ -1,0 +1,77 @@
+
+┌  storybook v10.6.5
+(node:30114) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+│
+●  Starting...
+│ ╭────────────────────────────────────────────────────────────────────────────╮
+│ │   Storybook ready!                                                         │
+│ │                                                                            │
+│ │   - Local:                http://127.0.0.1:6007/                           │
+│ │   - On your network:      run with --host <ip> to expose to local          │
+│ │   network                                                                  │
+│ │                                                                            │
+│ ╰────────────────────────────────────────────────────────────────────────────╯
+│
+●  362 ms for manager and 78 ms for preview
+│
+│  storybook/test: (node:30510) [DEP0205] DeprecationWarning:
+│  `module.register()` is deprecated. Use `module.registerHooks()`
+│  instead.
+│  (Use `node --trace-deprecation ...` to show where the warning was
+│  created)
+│
+│  storybook/test:
+│
+│  storybook/test: DEV  v4.1.12
+│  <reproduction>
+│
+│  storybook/test: Port 63315 is in use, trying another one...
+│
+│  storybook/test: PASS  Waiting for file changes...
+│
+│  storybook/test: press h to show help, press q to quit
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 52ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  10:06:20
+│  Duration  750ms (transform 0ms, setup 447ms, import 14ms, tests 52ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 19ms
+│
+│  storybook/test:
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  10:06:48
+│  Duration  366ms (transform 0ms, setup 154ms, import 10ms, tests 19ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 25ms
+│
+│  storybook/test:
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  10:07:26
+│  Duration  180ms (transform 0ms, setup 22ms, import 21ms, tests 25ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 18ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  10:08:16
+│  Duration  302ms (transform 0ms, setup 138ms, import 10ms, tests 18ms,
+│  environment 0ms)

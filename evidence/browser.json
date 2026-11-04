@@ -51,8 +51,24 @@
   "conclusion": "Two distinct managers originate run-all TRIGGER_RUN requests from one global click when two tabs are open.",
   "limits": [
     "Candidate tested only by focused protocol tests, not in browser.",
-    "Stop/cancellation and duplicate completed executions were not measured.",
+    "Stop/cancellation was not measured. Terminal logs show two completed test runs for each two-tab click.",
     "Raw received-message counts include forwarding and are not counts of distinct requests.",
     "Warmup used global Run tests in one tab rather than a selected-story action."
-  ]
+  ],
+  "terminalEvidence": {
+    "file": "browser-server.log",
+    "twoTabsClickA": [
+      "09:35:39",
+      "09:35:39"
+    ],
+    "twoTabsClickB": [
+      "09:36:11",
+      "09:36:12"
+    ],
+    "oneTabControls": [
+      "09:35:11",
+      "09:37:35"
+    ],
+    "resultPerRun": "Test Files 1 passed (1); Tests 2 passed (2)"
+  }
 }
