@@ -65,6 +65,32 @@ See `evidence/browser-server.log`: the two runs at 09:35:39 came from one click
 in A; runs at 09:36:11 and 09:36:12 came from one click in B. The one-tab controls
 are single summaries at 09:35:11 and 09:37:35.
 
+## Validate the proposed fix without building Storybook
+
+Stop the reproduction server with Ctrl-C, then run:
+
+```bash
+git pull --ff-only
+pnpm repro:fix
+pnpm storybook
+```
+
+Close old Storybook tabs and open the URL printed by this server. Keep Watch off,
+warm the runner with one successful global Run tests click in one tab, then open
+a second tab to the same URL. Click global Run tests once and wait: the terminal
+should print **one** complete Vitest summary. Repeat from the second tab, then
+close it and repeat from the first; every click should produce one summary.
+
+To compare with stock behavior, stop the server, run `pnpm repro:restore`, restart
+with `pnpm storybook`, close old tabs and repeat. With both tabs open, one click
+should again produce two complete summaries. Do not edit files during the check.
+
+This helper applies the same callback guard as the proposed PR to two installed
+Storybook 10.6.5 manager bundles. It does not build or install the upstream branch.
+It checks the package version and expected code before writing, and replaces
+files rather than modifying pnpm's shared store in place. Running either command
+again is safe. The standalone protocol test never patches dependencies itself.
+
 ## Exact two-tab check with optional origin diagnostics
 
 1. Open `http://localhost:6006/?path=/story/reproduction-counter--first` in tab A.
