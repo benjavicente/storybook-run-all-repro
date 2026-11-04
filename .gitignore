@@ -1,0 +1,6 @@
+node_modules/
+storybook-static/
+.vite/
+
+*.log
+!evidence/*.log

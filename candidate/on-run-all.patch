@@ -1,0 +1,18 @@
+diff --git a/code/core/src/shared/test-provider-store/index.ts b/code/core/src/shared/test-provider-store/index.ts
+--- a/code/core/src/shared/test-provider-store/index.ts
++++ b/code/core/src/shared/test-provider-store/index.ts
+@@ -402,6 +402,13 @@
+         universalTestProviderStore.send({ type: 'settings-changed' });
+       });
+     },
+-    onRunAll: (listener) => universalTestProviderStore.subscribe('run-all', listener),
++    onRunAll: (listener) => universalTestProviderStore.subscribe('run-all', (_event, info) => {
++      if (
++        info.actor.environment === 'MANAGER' &&
++        universalTestProviderStore.actor.environment === 'MANAGER' &&
++        info.actor.id !== universalTestProviderStore.actor.id
++      ) return;
++      listener();
++    }),
+     onClearAll: (listener) => universalTestProviderStore.subscribe('clear-all', listener),
+   };

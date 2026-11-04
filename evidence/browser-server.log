@@ -1,0 +1,111 @@
+$ storybook dev --port 6006 --no-open
+
+┌  storybook v10.6.5
+(node:14036) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+│
+●  Starting...
+│ ╭────────────────────────────────────────────────────────────────────────────╮
+│ │   Storybook ready!                                                         │
+│ │                                                                            │
+│ │   - Local:                http://127.0.0.1:6006/                           │
+│ │   - On your network:      run with --host <ip> to expose to local          │
+│ │   network                                                                  │
+│ │                                                                            │
+│ ╰────────────────────────────────────────────────────────────────────────────╯
+│
+●  120 ms for manager and 47 ms for preview
+│
+▲  Change detection unavailable: not a git repository
+│
+│  storybook/test: (node:14355) [DEP0205] DeprecationWarning:
+│  `module.register()` is deprecated. Use `module.registerHooks()`
+│  instead.
+│  (Use `node --trace-deprecation ...` to show where the warning was
+│  created)
+│
+│  storybook/test:
+│
+│  storybook/test: DEV  v4.1.12
+│  <reproduction>
+│
+│  storybook/test: 9:34:58 AM [vite] (client) Re-optimizing dependencies
+│  because vite config has changed
+│
+│  storybook/test: PASS  Waiting for file changes...
+│
+│  storybook/test: press h to show help, press q to quit
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 29ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:34:59
+│  Duration  677ms (transform 0ms, setup 423ms, import 14ms, tests 29ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 20ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:35:11
+│  Duration  361ms (transform 0ms, setup 187ms, import 9ms, tests 20ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 34ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:35:39
+│  Duration  229ms (transform 0ms, setup 24ms, import 27ms, tests 34ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 31ms
+│
+│  storybook/test:
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:35:39
+│  Duration  366ms (transform 0ms, setup 143ms, import 9ms, tests 31ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 37ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:36:11
+│  Duration  259ms (transform 0ms, setup 23ms, import 25ms, tests 37ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 24ms
+│
+│  storybook/test:
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:36:12
+│  Duration  187ms (transform 0ms, setup 22ms, import 7ms, tests 24ms,
+│  environment 0ms)
+│
+│  storybook/test: ✓
+│  |storybook:<reproduction>/.storybook
+│  (chromium)| stories/Counter.stories.js (2 tests) 28ms
+│
+│  storybook/test: Test Files  1 passed (1)
+│  Tests  2 passed (2)
+│  Start at  09:37:35
+│  Duration  305ms (transform 0ms, setup 35ms, import 22ms, tests 28ms,
+│  environment 0ms)

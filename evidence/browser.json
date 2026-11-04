@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-04",
+  "tool": "Chrome MCP",
+  "url": "http://localhost:6006/?path=/story/reproduction-counter--first",
+  "browser": "Chrome 156.0.0.0",
+  "watchMode": false,
+  "warmup": "After installing the pinned Playwright browser and restarting the server, ran global Run tests with one tab; both stories passed. CLI story control also passed.",
+  "action": "One click on the global Run tests button in the Component tests region, after resetting diagnostics in every open manager.",
+  "observations": [
+    {
+      "case": "one tab before",
+      "observedIn": "A",
+      "receivedMessages": 2,
+      "managerOrigins": [
+        "mw23ms2zbza5iu0p61l"
+      ]
+    },
+    {
+      "case": "two tabs, click A",
+      "observedIn": [
+        "A",
+        "B"
+      ],
+      "receivedMessagesPerTab": 3,
+      "managerOrigins": [
+        "mw23ms2zbza5iu0p61l",
+        "mw23nop3cq08za9nhds"
+      ]
+    },
+    {
+      "case": "two tabs, click B",
+      "observedIn": [
+        "A",
+        "B"
+      ],
+      "receivedMessagesPerTab": 3,
+      "managerOrigins": [
+        "mw23nop3cq08za9nhds",
+        "mw23ms2zbza5iu0p61l"
+      ]
+    },
+    {
+      "case": "one tab after closing B",
+      "observedIn": "A",
+      "receivedMessages": 2,
+      "managerOrigins": [
+        "mw23ms2zbza5iu0p61l"
+      ]
+    }
+  ],
+  "conclusion": "Two distinct managers originate run-all TRIGGER_RUN requests from one global click when two tabs are open.",
+  "limits": [
+    "Candidate tested only by focused protocol tests, not in browser.",
+    "Stop/cancellation and duplicate completed executions were not measured.",
+    "Raw received-message counts include forwarding and are not counts of distinct requests.",
+    "Warmup used global Run tests in one tab rather than a selected-story action."
+  ]
+}

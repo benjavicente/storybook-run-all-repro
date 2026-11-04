@@ -1,0 +1,19 @@
+│
+
+│  Storybook Environment Info:
+│
+
+│  System:
+│  OS: macOS 27.2
+│  CPU: (8) arm64 Apple M1
+│  Shell: 5.9 - /bin/zsh
+│  Binaries:
+│  Node: 26.13.0 -
+│  Yarn: 1.22.22 -
+│  npm: 12.2.1 -
+│  pnpm: 12.4.1 -
+│  <----- active
+│  npmPackages:
+│  @storybook/addon-vitest: 10.6.5 => 10.6.5
+│  @storybook/html-vite: 10.6.5 => 10.6.5
+│  storybook: 10.6.5 => 10.6.5

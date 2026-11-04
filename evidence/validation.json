@@ -1,0 +1,40 @@
+{
+  "validatedAt": "2026-11-04",
+  "environment": {
+    "node": "26.13.0",
+    "pnpm": "12.4.1",
+    "os": "macOS 27.2 arm64",
+    "browser": "Chrome 156.0.0.0"
+  },
+  "install": {
+    "cleanDirectory": true,
+    "command": "pnpm install",
+    "frozenLockfileCheck": "passed",
+    "buildScriptAllowlist": [
+      "esbuild"
+    ]
+  },
+  "protocol": {
+    "passed": 7,
+    "failed": 0,
+    "transport": "modeled; actual upstream factory",
+    "candidateApplied": "fixture in memory only"
+  },
+  "app": {
+    "staticBuild": "passed",
+    "cliStoryTests": {
+      "passed": 2,
+      "failed": 0
+    },
+    "interactiveTwoTabCheck": "confirmed, see browser.json",
+    "managedVitestRun": "passed",
+    "stopRecovery": "not tested"
+  },
+  "candidateBrowserCheck": "not performed",
+  "upstream": {
+    "latestStable": "v10.6.5",
+    "nextCommit": "c77d65454d19950f6cb365d63fcd9f3a6527eba0",
+    "sourceSha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380",
+    "fixedReleaseClaimed": false
+  }
+}

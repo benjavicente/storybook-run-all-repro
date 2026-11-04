@@ -1,0 +1,44 @@
+$ storybook build
+
+┌  Building storybook v10.6.5
+│
+◇  Cleaning outputDir: storybook-static
+(node:13571) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+│
+◇  Loading presets
+│
+◇  Building manager..
+│
+●  Building open services..
+│
+●  Building preview..
+│  Vite vite v6.4.2 building for production...
+│  Vite transforming...
+│  Vite ✓ 25 modules transformed.
+│  Vite rendering chunks...
+│  Vite computing gzip size...
+│  Vite storybook-static/iframe.html                          18.67 kB │
+│  gzip:   5.19 kB
+│  Vite storybook-static/assets/Counter.stories-XSUVXzJV.js    0.55 kB │
+│  gzip:   0.36 kB
+│  Vite storybook-static/assets/preload-helper-Dp1pzeXC.js     1.27 kB │
+│  gzip:   0.73 kB
+│  Vite storybook-static/vite-inject-mocker-entry.js          28.53 kB │
+│  gzip:   9.94 kB
+│  Vite storybook-static/assets/iframe-C8GP9_dq.js           872.35 kB │
+│  gzip: 245.62 kB
+│
+▲  Vite
+│  (!) Some chunks are larger than 500 kB after minification. Consider:
+│  - Using dynamic import() to code-split the application
+│  - Use build.rollupOptions.output.manualChunks to improve chunking:
+│  ]8;;https://rollupjs.org/configuration-options/#output-manualchunkshttps://rollupjs.org/configuration-options/#output-manualchunks]8;;
+│  - Adjust chunk size limit for this warning via
+│  build.chunkSizeWarningLimit.
+│  Vite ✓ built in 1.09s
+│
+◇  Output directory:
+│  <reproduction>/storybook-static
+│
+└  Storybook build completed successfully

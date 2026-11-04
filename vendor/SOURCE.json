@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-11-04T12:03:02.804Z",
+  "repository": "https://github.com/storybookjs/storybook",
+  "sourcePath": "code/core/src/shared/test-provider-store/index.ts",
+  "sources": [
+    {
+      "ref": "v10.6.5",
+      "url": "https://github.com/storybookjs/storybook/blob/v10.6.5/code/core/src/shared/test-provider-store/index.ts",
+      "sha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380"
+    },
+    {
+      "ref": "v11.0.0-beta.0",
+      "url": "https://github.com/storybookjs/storybook/blob/v11.0.0-beta.0/code/core/src/shared/test-provider-store/index.ts",
+      "sha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380"
+    },
+    {
+      "ref": "569627e184a1fd232aef552e2e221c849d4b6ed3",
+      "branchAtCheck": "next",
+      "url": "https://github.com/storybookjs/storybook/blob/569627e184a1fd232aef552e2e221c849d4b6ed3/code/core/src/shared/test-provider-store/index.ts",
+      "sha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380"
+    },
+    {
+      "ref": "c77d65454d19950f6cb365d63fcd9f3a6527eba0",
+      "branchAtCheck": "next",
+      "url": "https://github.com/storybookjs/storybook/blob/c77d65454d19950f6cb365d63fcd9f3a6527eba0/code/core/src/shared/test-provider-store/index.ts",
+      "sha256": "9219ddfa5d1702cf6e979271b154dce99fad33194ba1e5b14900621c9c012380"
+    }
+  ],
+  "sourceFilesIdentical": true,
+  "fixture": {
+    "file": "create-test-provider-store.v10.6.5.mjs",
+    "sha256": "3a917f8324e2a875f05206602e2eeffaf1ed8e60f9d312f033ae3eab8de8ecb3",
+    "method": "Extract the createTestProviderStore function implementation with a body, then TypeScript5.9.3 transpileModule, targetES2022/moduleESNext. No behavioral changes."
+  },
+  "managerCallback": "https://github.com/storybookjs/storybook/blob/v10.6.5/code/addons/vitest/src/manager.tsx#L37",
+  "license": "LICENSE.storybook"
+}

@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: unmodified upstream: one manager-origin action calls both managers
+ok 1 - unmodified upstream: one manager-origin action calls both managers
+  ---
+  duration_ms: 1.172459
+  type: 'test'
+  ...
+# Subtest: candidate: only the originating manager calls its providers
+ok 2 - candidate: only the originating manager calls its providers
+  ---
+  duration_ms: 0.220792
+  type: 'test'
+  ...
+# Subtest: candidate: either manager can originate the action
+ok 3 - candidate: either manager can originate the action
+  ---
+  duration_ms: 0.12675
+  type: 'test'
+  ...
+# Subtest: candidate: server-origin actions retain broadcast callback behavior
+ok 4 - candidate: server-origin actions retain broadcast callback behavior
+  ---
+  duration_ms: 0.106375
+  type: 'test'
+  ...
+# Subtest: candidate: preview-origin actions retain broadcast callback behavior
+ok 5 - candidate: preview-origin actions retain broadcast callback behavior
+  ---
+  duration_ms: 0.105541
+  type: 'test'
+  ...
+# Subtest: candidate: unsubscribe still removes the wrapped listener
+ok 6 - candidate: unsubscribe still removes the wrapped listener
+  ---
+  duration_ms: 0.08125
+  type: 'test'
+  ...
+# Subtest: candidate: all providers in the originating manager still receive the action
+ok 7 - candidate: all providers in the originating manager still receive the action
+  ---
+  duration_ms: 0.089667
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54.962583
